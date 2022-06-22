@@ -1,20 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
+using System.Linq;
 
-public class CanvasController : MonoBehaviour
+public class Ok : MonoBehaviour
 {
+    public GameObject EventCanvas;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject child = transform.GetChild(0).gameObject;
-        child.SetActive(true);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void OnClick()
+    {
+        EventCanvas.SetActive(false);
     }
 }
